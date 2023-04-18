@@ -17,9 +17,13 @@
       "paths": {
         "~/*": ["./src/*"],
         "~~/*": ["./*"]
-      }
+      },
+      "typeRoots": [
+        "/types/express/index.d.ts", ".node_modules/@types"
+      ],
     },
     "ts-node": {
-      "require": ["tsconfig-paths/register"]
+      "require": ["tsconfig-paths/register"],
+      "files": true // sans ça,  Property 'auth' does not exist on type 'Request<ParamsDictionary, any, any, ParsedQs, Record<string, any>>'.
     }
   }

@@ -1,7 +1,7 @@
 import {Schema, model } from 'mongoose';
 
 interface IThing {
-    title: string;
+  title: string;
   description: string;
   imageUrl: string;
   userId: string;
